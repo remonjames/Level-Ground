@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'BeauRivage';
+    src: url('./fonts/BeauRivage-Regular.ttf');
+}
+
+
+.hello {
+    color: red;
+    font-family: 'BeauRivage',;
+    background: url('./images/cat.jpg');
+    font-size: 5em;
+}
