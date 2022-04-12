@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
     <title>Level Ground</title>
 </head>
 
@@ -12,93 +15,100 @@
     <header>
         <nav>
             <ul>
-                <li><a>CLASSES</a></li>
-                <li><a>HIRE US</a></li>
-                <li><img></li>
-                <li><button>DONATE</button></li>
+                <li class="navLinks">
+                    <a>CLASSES</a>
+                    <a>HIRE US</a>
+                </li>
+                <li><a class="brand">LEVEL GROUND</a></li>
+                <li><button class="signupBtn">SIGN UP</button></li>
             </ul>
         </nav>
-
-        <h1>WHERE GRIT MEETS OPPORTUNITY</h1>
-        <h2>At Level Ground (LG), urban youth cultivate grit and resilience through Mixed Martial Arts. They learn to
-            apply these values *off the mat' in the pursuit of their ambitions through our Student Trainer Certification
-            and College Access programs.</h2>
-        <p>
-            <span>video icon</span>
-            <span>Watch the Video</span>
-        </p>
+        <main>
+            <h1>WHERE GRIT MEETS OPPORTUNITY</h1>
+            <h2>At Level Ground (LG), urban youth cultivate grit and resilience through Mixed Martial Arts. They learn
+                to apply these values "off the mat" in the pursuit of their ambitions through our Student Trainer
+                Certification and College Access programs.</h2>
+            <p class="videolink">
+                <span class="material-icons-outlined">play_circle</span>
+                <span>Watch the Video</span>
+            </p>
+        </main>
     </header>
 
-    <section>
-        <h2>WHY</h2>
-        <h3>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Done ullamcorper nulla non
-            metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur dipiscing elit. Duis mollis, est non commodo
-            luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</h3>
-    </section>
 
-    <section>
-        <div>
-            <img>
-            <h3>VISIT THE GYM</h3>
-            <h4>Etiam porta sem malesuada magna mollis euismod. Duis
-                molls, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere
-                consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac vestibulum at eros.</h4>
-            <button>SEE CLASSES</button>
-        </div>
-        <div>
-            <img>
-            <h3>HAVE US VISIT YOU</h3>
-            <h4>Etiam porta sem malesuada magna mollis euismod. Duis
-                molls, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere
-                consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac vestibulum at eros.</h4>
-            <button>HIRE US</button>
+    <section id="why">
+        <div class="mission">
+            <h2>WHY TRAIN WITH US?</h2>
+            <h3>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Done ullamcorper nulla
+                non
+                metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur dipiscing elit. Duis mollis, est non
+                commodo
+                luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</h3>
         </div>
     </section>
 
-    <section>
-        <h2>VOLUNTEER WITH LEVEL GROUND</h2>
-        <h3>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenaus vesubulum. Done ulamcorder nula non met.
+    <section id="cta">
+        <div class="ctaCard">
+            <img id="gym" class="ctaImage">
+            <h3 class="ctaHeading">VISIT THE GYM</h3>
+            <h4 class="ctaInfo">Etiam porta sem malesuada magna mollis euismod. Duis
+                molls, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere
+                consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac vestibulum at eros.</h4>
+            <button class="ctaBtn">SEE CLASSES</button>
+        </div>
+        <div class="ctaCard">
+            <img id="home" class="ctaImage">
+            <h3 class="ctaHeading">HAVE US VISIT YOU</h3>
+            <h4 class="ctaInfo">Etiam porta sem malesuada magna mollis euismod. Duis
+                molls, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere
+                consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac vestibulum at eros.</h4>
+            <button class="ctaBtn">HIRE US</button>
+        </div>
+    </section>
+
+    <section id="volunteer">
+        <h2 class="volunteerHeading">VOLUNTEER WITH LEVEL GROUND</h2>
+        <h3 class="volunteerInfo">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenaus vesubulum. Done
+            ulamcorder
+            nula non met.
             auctor fringlia. Lorem Ipsum dolor sit amel, consectetur adipiscing elit. Duis mollis, est non commodo
             luctus, nisi era porttitor ligula, eget lacinia odio sem nec elit.</h3>
-        <button>VOLUNTEER</button>
+        <button class="ctaBtn">VOLUNTEER</button>
     </section>
 
     <footer>
-        <div>
-            <div>
-                <ul>
-                    <span>fb logo</span>
-                    <span>twitter logo</span>
-                    <span>email logo</span>
+        <div class="footerContainer">
+            <div class="footerLeft">
+                <ul class="icons">
+                    <img class="icon" id="facebookIcon" alt="facebook icon">
+                    <img class="icon" id="twitterIcon" alt="twitter icon">
+                    <img class="icon" id="emailIcon" alt="email icon">
                 </ul>
-                <span>SITE MAP</span>
-                <ul>
-                    <span>Classes</span>
-                    <span>Hire Us</span>
+                <span class="linkHeading">SITE MAP</span>
+                <ul class="footerLinks">
+                    <span class="footerLink"><a>Classes</a></span>
+                    <span class="footerLink"><a>Hire Us</a></span>
                 </ul>
-                <span>CONTRIBUTE</span>
-                <ul>
-                    <span>Give</span>
-                    <span>Volunteer</span>
+                <span class="linkHeading">CONTRIBUTE</span>
+                <ul class="footerLinks">
+                    <span class="footerLink"><a>Give</a></span>
+                    <span class="footerLink"><a>Volunteer</a></span>
                 </ul>
             </div>
-            <div>
-                <div>
+            <div class="footerRight">
+                <div class="footerBrand">
                     <span>LEVEL GROUND</span>
                     <span>MIXED MARTIAL ARTS</span>
                 </div>
-                <div>
+                <div class="address">
                     <span>50 Milk Street, Floor 17</span>
                     <span>Boston, MA 02109</span>
                     <span>410-533-2210</span>
                 </div>
-                <span>Ali@LevelGroundMMA.org</span>
+                <span class="email"><a href="mailto:ali@levelgroundmma.org">Ali@LevelGroundMMA.org</a></span>
             </div>
         </div>
-        <div>
-            <p>Level Ground Mixed Martial Arts is a tax-exempt, 501(c)3 organization under IRS. EIN 46-3915852</p>
-            <img src="" alt="">
-        </div>
+        <p><a class="footerText" href="https://www.freepik.com">Photos from www.freepik.com</a></p>
     </footer>
 
 

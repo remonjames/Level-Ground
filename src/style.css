@@ -4,14 +4,306 @@
 }
 
 @font-face {
-    font-family: 'BeauRivage';
-    src: url('./fonts/BeauRivage-Regular.ttf');
+    font-family: 'SourceSansProBold';
+    src: url('./fonts/SourceSansPro-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'RubikMoonrocks';
+    src: url('./fonts/RubikMoonrocks-Regular.ttf');
+}
+
+:root {
+    --primary-color: #036;
+    --light-text-color: #f3f3f3;
+    --dark-text-color: #2f2f2f;
+    --light-bg: #dcdfe2;
+    --dark-blue-bg: #00003D;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    font-family: 'SourceSansPro', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+nav {
+    background-color: var(--primary-color);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0 40px;
+    color: var(--light-text-color);
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.navLinks > a {
+    cursor: pointer;
+}
+
+.brand {
+    font-family: 'RubikMoonrocks', sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.signupBtn {
+    font-size: 1rem;
+    background-color: white;
+    padding: 5px 10px;
+    transition: 0.1s;
+}
+
+.signupBtn:hover {
+    transform: scale(1.1, 1.1);
 }
 
 
-.hello {
-    color: red;
-    font-family: 'BeauRivage',;
-    background: url('./images/cat.jpg');
-    font-size: 5em;
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    color: var(--light-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'SourceSansProBold', sans-serif;
+}
+
+main h2 {
+    max-width: 700px;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    padding: 20px;
+    text-align: center;
+}
+
+.videolink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#why {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    padding: 100px 50px;
+}
+
+.mission > h2 {
+    font-size: 1.8rem;
+    font-family: 'SourceSansProBold', sans-serif;
+}
+
+.mission > h3 {
+    font-size: 1.4rem;
+    color: var(--dark-text-color);
+}
+
+#cta {
+    display: flex;
+    background-color: var(--light-bg);
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ctaCard {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctaImage {
+    height: 250px;
+}
+
+.ctaHeading {
+    font-size: 1.4rem;
+    font-family: 'SourceSansProBold';
+}
+
+.ctaInfo {
+    color: var(--dark-text-color);
+    font-size: 1.2rem;
+    width:  350px;
+    text-align: center;
+}
+
+.ctaBtn {
+    border: 2px solid var(--dark-text-color);
+    padding: 20px 40px;
+    font-size: 1.2rem;
+}
+
+.ctaBtn:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}
+
+#volunteer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.volunteerHeading {
+    font-size: 1.8rem;
+    font-family: 'SourceSansProBold', sans-serif;
+    text-align: center;
+}
+
+.volunteerInfo {
+    font-size: 1.4rem;
+    color: var(--dark-text-color);
+    max-width: 900px;
+    text-align: center;
+}
+
+
+footer {
+    color: var(--light-text-color);
+    background-color: var(--dark-blue-bg);
+    padding-bottom: 20px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin: 20px 50px;
+    border-bottom: 1px solid white;
+}
+
+.footerLeft, .footerRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons,.footerLinks {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);
+    height: 22px;
+    cursor: pointer;
+}
+
+.linkHeading {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.footerLink {
+    margin-top: 5px;
+    color: var(--light-text-color);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.footerBrand, .address {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.address {
+    margin: 15px 0;
+}
+
+.email {
+    font-size: 0.8rem;
+}
+
+.footerText {
+    margin-left: 50px;
+    font-size: 0.8rem;
+    color: var(--light-text-color);
 }
